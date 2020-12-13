@@ -1,0 +1,61 @@
+@import "fonts.css";
+
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+body {
+    font-family: Hack;
+    background-color: var(--base03);
+}
+
+a:link {
+    color: var(--blue);
+}
+
+a:visited {
+    color: var(--violet);
+}
+
+h1,h2,h3 {
+    color: var(--base1);
+}
+
+th {
+    color: var(--base0);
+}
+
+td {
+    color: var(--yellow);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+p {
+    color: var(--base0);
+    max-width: 80ch;
+}
+
+hr {
+    color: var(--base01);
+    border-color: var(--base01);
+}
+
+h1.error {
+    color: var(--red);
+}
