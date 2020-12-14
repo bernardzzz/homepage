@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>reCAPTCHA</title>
+    <meta name="description" content="reCAPTCHA to obtain email">
+    <meta name="author" content="Bernard">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <meta name="theme-color" content="#002b36">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<button id="recaptcha-button">Get the Email address</button>
+<br><br>
+<a id="email-link" hidden></a>
+<p id="error-message"></p>
+<script>
+    const buttonDOM = document.getElementById('recaptcha-button')
+    const emailDOM = document.getElementById('email-link')
+    const errorDOM = document.getElementById('error-message')
+    buttonDOM.addEventListener('click', verify)
+    async function verify(e) {
+        buttonDOM.innerText = 'Verifying your behaviour...'
+        await new Promise(resolve => grecaptcha.ready(() => resolve()))
+        const token = await new Promise(resolve => {
+            grecaptcha.execute('6LdNiQUaAAAAAG5fb3MUh-I_E9XCe8FiidGI3egy', { action: 'request_email' })
+            .then(token => resolve(token))
+        })
+        const verifyURL = new URL('https://recaptcha-verify.homepage.theramen.pro')
+        verifyURL.searchParams.append('rt', token)
+        const verifyResp = await fetch(verifyURL)
+        if (verifyResp.status === 200) {
+            const verifyResult = await verifyResp.json()
+            renderEmail(verifyResult.email)
+        } else {
+            renderError()
+        }
+
+    }
+
+    function renderEmail(email) {
+        buttonDOM.innerText = 'Done!'
+        buttonDOM.disabled = true
+        emailDOM.href = `mailto:${email}`
+        emailDOM.innerText = email
+        emailDOM.hidden = false
+    }
+
+    function renderError() {
+        buttonDOM.innerText = 'Oops!'
+        buttonDOM.disabled = true
+        errorDOM.innerText = `With all due respect, Google reCAPTCHA reckons you look like a bot...`
+    }
+</script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdNiQUaAAAAAG5fb3MUh-I_E9XCe8FiidGI3egy" async defer></script>
+</body>
+</html>

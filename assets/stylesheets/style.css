@@ -59,3 +59,7 @@ hr {
 h1.error {
     color: var(--red);
 }
+
+button {
+    font-family: Hack;
+}

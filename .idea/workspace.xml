@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a2264d-b470-43e7-bfea-5df7cf66b547" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/stylesheets/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-to-s3.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recaptcha.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload-to-s3.sh" beforeDir="false" afterPath="$PROJECT_DIR$/upload-to-s3.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,8 +41,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/current/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607856313989</updated>
       <workItem from="1607856315108" duration="13395000" />
+      <workItem from="1607909799533" duration="14506000" />
     </task>
     <servers />
   </component>
@@ -75,5 +84,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
