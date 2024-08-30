@@ -1,5 +1,12 @@
 @import "fonts.css";
 
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('../fonts/IBMPlexMono-Regular-Latin1.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --base03: #002b36;
     --base02: #073642;
@@ -20,46 +27,68 @@
 }
 
 body {
-    font-family: Hack;
-    background-color: var(--base03);
+    background-color: #2b2b2b;
+    color: #a9b7c6;
+    font-family: 'IBMPlexMono', monospace;
+    /* Updated font family */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    /* Increased font size */
 }
 
-a:link {
-    color: var(--blue);
+.terminal-body {
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
 }
 
-a:visited {
-    color: var(--violet);
+.prompt {
+    color: #6897bb;
 }
 
-h1,h2,h3 {
-    color: var(--base1);
+.command {
+    color: #cc7832;
 }
 
-th {
-    color: var(--base0);
+a {
+    color: #6897bb;
+    text-decoration: none;
 }
 
-td {
-    color: var(--yellow);
-    padding-left: 6px;
-    padding-right: 6px;
+a:hover {
+    text-decoration: underline;
 }
 
-p {
-    color: var(--base0);
-    max-width: 80ch;
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #a9b7c6;
 }
 
-hr {
-    color: var(--base01);
-    border-color: var(--base01);
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1em;
+    /* Match the font size */
+    background-color: #a9b7c6;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    /* Align cursor with text */
 }
 
-h1.error {
-    color: var(--red);
-}
+@keyframes blink {
 
-button {
-    font-family: Hack;
+    from,
+    to {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #a9b7c6;
+    }
 }
