@@ -1,4 +1,4 @@
-const quotes = [
+export const quotes = [
     {
         "text": "Talk is cheap. Show me the code.",
         "author": "Linus Torvalds"
@@ -140,4 +140,3 @@ const quotes = [
         "author": "Alan Kay"
     }
 ];
-if (typeof module !== 'undefined' && module.exports) { module.exports = { quotes }; }

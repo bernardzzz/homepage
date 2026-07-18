@@ -15,11 +15,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: "7beb9a931e4d66d947b0198258baff9c"
           projectName: theramen-homepage
-          directory: .
+          directory: dist
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

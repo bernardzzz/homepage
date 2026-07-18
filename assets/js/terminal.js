@@ -1,9 +1,5 @@
-let currentQuotes = [];
-if (typeof quotes !== 'undefined') {
-    currentQuotes = quotes;
-} else if (typeof require !== 'undefined') {
-    currentQuotes = require('./quotes.js').quotes;
-}
+import { quotes } from './quotes.js';
+let currentQuotes = quotes;
 
 let lastQuoteIndex = -1;
 
@@ -98,11 +94,9 @@ function initTerminal(containerId) {
     });
 }
 
-// Export for tests
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { typeWriter, getRandomQuote, quotes: currentQuotes };
-} else {
-    // Run in browser
+export { typeWriter, getRandomQuote, currentQuotes as quotes };
+
+if (typeof document !== 'undefined') {
     document.addEventListener('DOMContentLoaded', () => {
         initTerminal('terminal-container');
     });

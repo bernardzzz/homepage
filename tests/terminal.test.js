@@ -1,12 +1,12 @@
-const { describe, it, beforeEach } = require('node:test');
-const assert = require('node:assert');
-const { JSDOM } = require('jsdom');
+import { describe, it, beforeEach } from 'node:test';
+import assert from 'node:assert';
+import { JSDOM } from 'jsdom';
+import * as terminalModule from '../assets/js/terminal.js';
 
 describe('Terminal Specifications', () => {
     let dom;
     let window;
     let document;
-    let terminalModule;
 
     beforeEach(() => {
         dom = new JSDOM('<!DOCTYPE html><div id="terminal-container"></div>');
@@ -14,10 +14,6 @@ describe('Terminal Specifications', () => {
         document = window.document;
         global.document = document;
         global.window = window;
-
-        // Reset module cache to get a fresh state
-        delete require.cache[require.resolve('../assets/js/terminal.js')];
-        terminalModule = require('../assets/js/terminal.js');
     });
 
     it('should have a pool of grounded quotes', () => {
