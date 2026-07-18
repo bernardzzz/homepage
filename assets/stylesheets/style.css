@@ -113,6 +113,12 @@ pre {
     font-size: inherit;
     flex-grow: 1;
     caret-color: var(--base0);
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
 }
 .terminal-output {
     color: var(--yellow);
