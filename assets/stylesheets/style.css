@@ -125,3 +125,10 @@ pre {
     display: flex;
     flex-direction: column;
 }
+
+.status-active {
+    color: var(--green);
+}
+.status-inactive {
+    color: var(--red);
+}

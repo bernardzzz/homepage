@@ -1,12 +1,12 @@
-const quotes = [
-    { text: "Talk is cheap. Show me the code.", author: "Linus Torvalds" },
-    { text: "Free software is software that respects your freedom and the social solidarity of your community.", author: "Richard Stallman" },
-    { text: "It's better to make a few people really happy than to make a lot of people semi-happy.", author: "Paul Graham" },
-    { text: "I could restructure the program's flow, or use one little 'goto' instead.", author: "xkcd" }
-];
+let currentQuotes = [];
+if (typeof quotes !== 'undefined') {
+    currentQuotes = quotes;
+} else if (typeof require !== 'undefined') {
+    currentQuotes = require('./quotes.js').quotes;
+}
 
 function getRandomQuote() {
-    return quotes[Math.floor(Math.random() * quotes.length)];
+    return currentQuotes[Math.floor(Math.random() * currentQuotes.length)];
 }
 
 function typeWriter(text, element, speed = 30) {
@@ -90,7 +90,7 @@ function initTerminal(containerId) {
 
 // Export for tests
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { typeWriter, getRandomQuote, quotes };
+    module.exports = { typeWriter, getRandomQuote, quotes: currentQuotes };
 } else {
     // Run in browser
     document.addEventListener('DOMContentLoaded', () => {
