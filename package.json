@@ -1,0 +1,10 @@
+{
+  "name": "theramen-homepage",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node --test tests/terminal.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
