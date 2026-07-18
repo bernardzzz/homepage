@@ -138,10 +138,6 @@ const quotes = [
     {
         "text": "The most disastrous thing that you can ever learn is your first programming language.",
         "author": "Alan Kay"
-    },
-    {
-        "text": "Measuring programming progress by lines of code is like measuring airplane building progress by weight.",
-        "author": "Bill Gates"
     }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = { quotes }; }
