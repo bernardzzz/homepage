@@ -5,8 +5,18 @@ if (typeof quotes !== 'undefined') {
     currentQuotes = require('./quotes.js').quotes;
 }
 
+let lastQuoteIndex = -1;
+
 function getRandomQuote() {
-    return currentQuotes[Math.floor(Math.random() * currentQuotes.length)];
+    if (currentQuotes.length <= 1) {
+        return currentQuotes[0];
+    }
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * currentQuotes.length);
+    } while (newIndex === lastQuoteIndex);
+    lastQuoteIndex = newIndex;
+    return currentQuotes[newIndex];
 }
 
 function typeWriter(text, element, speed = 30) {
