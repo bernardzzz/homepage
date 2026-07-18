@@ -4,7 +4,27 @@ const quotes = [
         "author": "Linus Torvalds"
     },
     {
+        "text": "Software is like sex: it's better when it's free.",
+        "author": "Linus Torvalds"
+    },
+    {
+        "text": "If you think your users are idiots, only idiots will use it.",
+        "author": "Linus Torvalds"
+    },
+    {
+        "text": "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu).",
+        "author": "Linus Torvalds"
+    },
+    {
         "text": "Free software is software that respects your freedom and the social solidarity of your community.",
+        "author": "Richard Stallman"
+    },
+    {
+        "text": "To understand why people are so passionate about free software, you have to understand the difference between 'free' as in 'free speech' and 'free' as in 'free beer'.",
+        "author": "Richard Stallman"
+    },
+    {
+        "text": "Sharing is good, and with digital technology, sharing is easy.",
         "author": "Richard Stallman"
     },
     {
@@ -12,392 +32,92 @@ const quotes = [
         "author": "Paul Graham"
     },
     {
+        "text": "The most important thing for startups to do is to focus on a single problem and solve it well.",
+        "author": "Paul Graham"
+    },
+    {
+        "text": "You can't have great software without a great team, and most software teams behave like dysfunctional families.",
+        "author": "Paul Graham"
+    },
+    {
+        "text": "When you don't create things, you become defined by your tastes rather than ability.",
+        "author": "Paul Graham"
+    },
+    {
         "text": "I could restructure the program's flow, or use one little 'goto' instead.",
         "author": "xkcd"
     },
     {
-        "text": "Premature optimization is the root of all evil.",
-        "author": "Donald Knuth"
+        "text": "Compiling...",
+        "author": "xkcd"
     },
     {
-        "text": "Programs must be written for people to read, and only incidentally for machines to execute.",
-        "author": "Harold Abelson"
+        "text": "There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.",
+        "author": "xkcd / Leon Bambrick"
     },
     {
-        "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-        "author": "Martin Fowler"
+        "text": "\u4e00\u4e2a\u4eba\u53ea\u62e5\u6709\u6b64\u751f\u6b64\u4e16\u662f\u4e0d\u591f\u7684\uff0c\u4ed6\u8fd8\u5e94\u8be5\u62e5\u6709\u8bd7\u610f\u7684\u4e16\u754c\u3002",
+        "author": "\u738b\u5c0f\u6ce2"
     },
     {
-        "text": "First, solve the problem. Then, write the code.",
-        "author": "John Johnson"
+        "text": "\u6211\u5bf9\u81ea\u5df1\u7684\u8981\u6c42\u5f88\u4f4e\uff1a\u6211\u6d3b\u5728\u4e16\u4e0a\uff0c\u65e0\u975e\u60f3\u8981\u660e\u767d\u4e9b\u9053\u7406\uff0c\u9047\u89c1\u4e9b\u6709\u8da3\u7684\u4e8b\u3002",
+        "author": "\u738b\u5c0f\u6ce2"
     },
     {
-        "text": "Experience is the name everyone gives to their mistakes.",
-        "author": "Oscar Wilde"
+        "text": "\u4eba\u7684\u4e00\u5207\u75db\u82e6\uff0c\u672c\u8d28\u4e0a\u90fd\u662f\u5bf9\u81ea\u5df1\u7684\u65e0\u80fd\u7684\u6124\u6012\u3002",
+        "author": "\u738b\u5c0f\u6ce2"
     },
     {
-        "text": "In order to understand recursion, one must first understand recursion.",
-        "author": "Unknown"
+        "text": "\u667a\u6167\u672c\u8eab\u5c31\u662f\u597d\u7684\u3002\u6709\u4e00\u5929\u6211\u4eec\u90fd\u4f1a\u6b7b\u53bb\uff0c\u8ffd\u6c42\u667a\u6167\u7684\u9053\u8def\u8fd8\u4f1a\u6709\u4eba\u5728\u8d70\u7740\u3002",
+        "author": "\u738b\u5c0f\u6ce2"
     },
     {
-        "text": "I have not failed. I've just found 10,000 ways that won't work.",
-        "author": "Thomas A. Edison"
+        "text": "\u5fb7\u6027\u662f\u4e00\u5206\u94b1\u4e00\u5206\u8d27\u7684\uff0c\u6ca1\u6709\u65e0\u7f18\u65e0\u6545\u7684\u81ea\u7531\uff0c\u4e5f\u6ca1\u6709\u65e0\u7f18\u65e0\u6545\u7684\u5974\u5f79\u3002",
+        "author": "\u5218\u4ef2\u656c"
     },
     {
-        "text": "Software is like sex: it's better when it's free.",
-        "author": "Linus Torvalds"
+        "text": "\u5386\u53f2\u662f\u4e0d\u80fd\u5047\u8bbe\u7684\uff0c\u4f46\u5386\u53f2\u7684\u8282\u70b9\u662f\u53ef\u4ee5\u901a\u8fc7\u535a\u5f08\u6765\u8ba4\u8bc6\u7684\u3002",
+        "author": "\u5218\u4ef2\u656c"
     },
     {
-        "text": "Simplicity is prerequisite for reliability.",
-        "author": "Edsger W. Dijkstra"
+        "text": "\u79e9\u5e8f\u7684\u751f\u4ea7\u548c\u8f93\u51fa\uff0c\u662f\u8861\u91cf\u4e00\u4e2a\u6587\u660e\u751f\u547d\u529b\u7684\u552f\u4e00\u6807\u51c6\u3002",
+        "author": "\u5218\u4ef2\u656c"
     },
     {
-        "text": "There are only two hard things in Computer Science: cache invalidation and naming things.",
-        "author": "Phil Karlton"
+        "text": "\u4eba\u751f\u5c31\u662f\u4e00\u573a\u4e0d\u65ad\u5730\u9002\u5e94\uff0c\u9002\u5e94\u81ea\u5df1\uff0c\u9002\u5e94\u522b\u4eba\uff0c\u9002\u5e94\u8fd9\u64cd\u86cb\u7684\u793e\u4f1a\u3002",
+        "author": "\u5200\u5c14\u767b"
     },
     {
-        "text": "A good programmer is someone who always looks both ways before crossing a one-way street.",
-        "author": "Doug Linder"
+        "text": "\u5f88\u591a\u4eba\u4e0d\u4ec5\u4e0d\u77e5\u9053\u81ea\u5df1\u60f3\u8981\u4ec0\u4e48\uff0c\u751a\u81f3\u4e0d\u77e5\u9053\u81ea\u5df1\u6b63\u5728\u5931\u53bb\u4ec0\u4e48\u3002",
+        "author": "\u5200\u5c14\u767b"
     },
     {
-        "text": "Java is to JavaScript what car is to Carpet.",
-        "author": "Chris Heilmann"
+        "text": "\u6211\u4eec\u5728\u5386\u53f2\u4e2d\u5b66\u5230\u7684\u552f\u4e00\u6559\u8bad\uff0c\u5c31\u662f\u6211\u4eec\u65e0\u6cd5\u4ece\u5386\u53f2\u4e2d\u5b66\u5230\u4efb\u4f55\u6559\u8bad\u3002",
+        "author": "\u5200\u5c14\u767b"
     },
     {
-        "text": "Code is like humor. When you have to explain it, it's bad.",
-        "author": "Cory House"
-    },
-    {
-        "text": "The best thing about a boolean is even if you are wrong, you are only off by a bit.",
-        "author": "Anonymous"
-    },
-    {
-        "text": "Programming is the art of algorithm design and the craft of debugging errant code.",
-        "author": "Ellen Ullman"
-    },
-    {
-        "text": "Ruby is rubbish! PHP is phpantastic!",
-        "author": "Nikita Popov"
-    },
-    {
-        "text": "The computer was born to solve problems that did not exist before.",
-        "author": "Bill Gates"
-    },
-    {
-        "text": "Before software can be reusable it first has to be usable.",
-        "author": "Ralph Johnson"
-    },
-    {
-        "text": "Make it work, make it right, make it fast.",
-        "author": "Kent Beck"
-    },
-    {
-        "text": "One man's crappy software is another man's full-time job.",
-        "author": "Jessica Gaston"
-    },
-    {
-        "text": "It's not a bug - it's an undocumented feature.",
-        "author": "Anonymous"
-    },
-    {
-        "text": "Truth can only be found in one place: the code.",
-        "author": "Robert C. Martin"
-    },
-    {
-        "text": "Measuring programming progress by lines of code is like measuring airplane building progress by weight.",
-        "author": "Bill Gates"
-    },
-    {
-        "text": "If debugging is the process of removing software bugs, then programming must be the process of putting them in.",
-        "author": "Edsger W. Dijkstra"
-    },
-    {
-        "text": "The most important property of a program is whether it accomplishes the intention of its user.",
-        "author": "C.A.R. Hoare"
-    },
-    {
-        "text": "You can't trust code that you did not totally create yourself.",
-        "author": "Ken Thompson"
-    },
-    {
-        "text": "That's the thing about people who think they hate computers. What they really hate is lousy programmers.",
-        "author": "Larry Niven"
-    },
-    {
-        "text": "To iterate is human, to recurse divine.",
-        "author": "L. Peter Deutsch"
-    },
-    {
-        "text": "When to use iterative development? You should use iterative development only on projects that you want to succeed.",
-        "author": "Martin Fowler"
-    },
-    {
-        "text": "Programming can be fun, so can cryptography; however they should not be combined.",
-        "author": "Kreitzberg and Shneiderman"
-    },
-    {
-        "text": "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
-        "author": "John Woods"
-    },
-    {
-        "text": "The function of good software is to make the complex appear to be simple.",
-        "author": "Grady Booch"
-    },
-    {
-        "text": "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.",
-        "author": "Eagleson's Law"
-    },
-    {
-        "text": "Don't comment bad code - rewrite it.",
-        "author": "Brian Kernighan"
-    },
-    {
-        "text": "Good code is its own best documentation.",
-        "author": "Steve McConnell"
-    },
-    {
-        "text": "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code.",
-        "author": "Dan Salomon"
-    },
-    {
-        "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
-        "author": "Will Durant"
-    },
-    {
-        "text": "The only way to learn a new programming language is by writing programs in it.",
+        "text": "Unix is simple. It just takes a genius to understand its simplicity.",
         "author": "Dennis Ritchie"
-    },
-    {
-        "text": "UNIX is very simple, it just needs a genius to understand its simplicity.",
-        "author": "Dennis Ritchie"
-    },
-    {
-        "text": "The C language combines all the power of assembly language with all the ease-of-use of assembly language.",
-        "author": "Gordon Letwin"
-    },
-    {
-        "text": "I think Microsoft named .Net so it wouldn't show up in a Unix directory listing.",
-        "author": "Oktal"
-    },
-    {
-        "text": "Hardware: The parts of a computer system that can be kicked.",
-        "author": "Jeff Pesis"
-    },
-    {
-        "text": "There is no reason anyone would want a computer in their home.",
-        "author": "Ken Olsen"
-    },
-    {
-        "text": "If at first you don't succeed; call it version 1.0.",
-        "author": "Unknown"
-    },
-    {
-        "text": "The problem with troubleshooting is that trouble shoots back.",
-        "author": "Unknown"
-    },
-    {
-        "text": "A son asked his father (a programmer) why the sun rises in the east, and sets in the west. His response? It works, don't touch!",
-        "author": "Unknown"
-    },
-    {
-        "text": "Software and cathedrals are much the same - first we build them, then we pray.",
-        "author": "Sam Ewing"
-    },
-    {
-        "text": "Computers are good at following instructions, but not at reading your mind.",
-        "author": "Donald Knuth"
-    },
-    {
-        "text": "If you automate a mess, you get an automated mess.",
-        "author": "Rod Michael"
-    },
-    {
-        "text": "Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.",
-        "author": "Antoine de Saint-Exupery"
-    },
-    {
-        "text": "Program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.",
-        "author": "Edsger W. Dijkstra"
-    },
-    {
-        "text": "There are 10 types of people in the world: those who understand binary, and those who don't.",
-        "author": "Unknown"
-    },
-    {
-        "text": "The trouble with programmers is that you can never tell what a programmer is doing until it's too late.",
-        "author": "Seymour Cray"
-    },
-    {
-        "text": "The best code is no code at all.",
-        "author": "Jeff Atwood"
-    },
-    {
-        "text": "Copy and paste is a design error.",
-        "author": "David Parnas"
-    },
-    {
-        "text": "Real programmers don't comment their code. If it was hard to write, it should be hard to understand.",
-        "author": "Unknown"
-    },
-    {
-        "text": "It is easier to change the specification to fit the program than vice versa.",
-        "author": "Alan Perlis"
-    },
-    {
-        "text": "Debugging is twice as hard as writing the code in the first place.",
-        "author": "Brian Kernighan"
-    },
-    {
-        "text": "We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins.",
-        "author": "Ellen Ullman"
-    },
-    {
-        "text": "The most disastrous thing that you can ever learn is your first programming language.",
-        "author": "Alan Kay"
-    },
-    {
-        "text": "Walking on water and developing software from a specification are easy if both are frozen.",
-        "author": "Edward V. Berard"
-    },
-    {
-        "text": "It is not enough for code to work.",
-        "author": "Robert C. Martin"
-    },
-    {
-        "text": "When you don't create things, you become defined by your tastes rather than ability.",
-        "author": "Why The Lucky Stiff"
-    },
-    {
-        "text": "Documentation is a love letter that you write to your future self.",
-        "author": "Damian Conway"
-    },
-    {
-        "text": "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.",
-        "author": "Patrick McKenzie"
-    },
-    {
-        "text": "If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.",
-        "author": "Gerald Weinberg"
-    },
-    {
-        "text": "You can't have great software without a great team, and most software teams behave like dysfunctional families.",
-        "author": "Jim McCarthy"
-    },
-    {
-        "text": "The sooner you start to code, the longer the program will take.",
-        "author": "Roy Carlson"
-    },
-    {
-        "text": "A computer lets you make more mistakes faster than any other invention in human history.",
-        "author": "Dan Rather"
-    },
-    {
-        "text": "I'm not a great programmer; I'm just a good programmer with great habits.",
-        "author": "Kent Beck"
-    },
-    {
-        "text": "Testing leads to failure, and failure leads to understanding.",
-        "author": "Burt Rutan"
-    },
-    {
-        "text": "Optimism is an occupational hazard of programming: feedback is the treatment.",
-        "author": "Kent Beck"
-    },
-    {
-        "text": "The bearing of a child takes nine months, no matter how many women are assigned.",
-        "author": "Fred Brooks"
-    },
-    {
-        "text": "How does a project get to be a year late? One day at a time.",
-        "author": "Fred Brooks"
-    },
-    {
-        "text": "Programming is like kicking yourself in the face, sooner or later your nose will bleed.",
-        "author": "Kyle Woodbury"
-    },
-    {
-        "text": "Good design adds value faster than it adds cost.",
-        "author": "Thomas C. Gale"
-    },
-    {
-        "text": "The most important single aspect of software development is to be clear about what you are trying to build.",
-        "author": "Bjarne Stroustrup"
-    },
-    {
-        "text": "A language that doesn't affect the way you think about programming is not worth knowing.",
-        "author": "Alan Perlis"
     },
     {
         "text": "Lisp isn't a language, it's a building material.",
         "author": "Alan Kay"
     },
     {
-        "text": "Learning to program has no more to do with designing interactive software than learning to touch type has to do with writing poetry.",
-        "author": "Ted Nelson"
-    },
-    {
-        "text": "In theory, there is no difference between theory and practice. But, in practice, there is.",
-        "author": "Jan L.A. van de Snepscheut"
-    },
-    {
-        "text": "The purpose of software engineering is to control complexity, not to create it.",
-        "author": "Pamela Zave"
-    },
-    {
-        "text": "The Internet? Is that thing still around?",
-        "author": "Homer Simpson"
-    },
-    {
-        "text": "Controlling complexity is the essence of computer programming.",
-        "author": "Brian Kernighan"
+        "text": "Code never lies, comments sometimes do.",
+        "author": "Ron Jeffries"
     },
     {
         "text": "Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build and test.",
         "author": "Ray Ozzie"
     },
     {
-        "text": "There is no programming language - no matter how structured - that will prevent programmers from making bad programs.",
-        "author": "Larry Flon"
+        "text": "The most disastrous thing that you can ever learn is your first programming language.",
+        "author": "Alan Kay"
     },
     {
-        "text": "If you think your users are idiots, only idiots will use it.",
-        "author": "Linus Torvalds"
-    },
-    {
-        "text": "The best performance improvement is the transition from the nonworking state to the working state.",
-        "author": "J. Osterhout"
-    },
-    {
-        "text": "Without requirements or design, programming is the art of adding bugs to an empty text file.",
-        "author": "Louis Srygley"
-    },
-    {
-        "text": "An API that isn't comprehensible isn't usable.",
-        "author": "James Gosling"
-    },
-    {
-        "text": "The most beautiful code I ever wrote was a single line of a regular expression.",
-        "author": "Unknown"
-    },
-    {
-        "text": "Code never lies, comments sometimes do.",
-        "author": "Ron Jeffries"
-    },
-    {
-        "text": "The older I get, the more I realize that the only thing a programmer can really be proud of is deleting code.",
-        "author": "Unknown"
-    },
-    {
-        "text": "It's OK to figure out murder mysteries, but you shouldn't need to figure out code.",
-        "author": "Steve McConnell"
-    },
-    {
-        "text": "Any sufficiently advanced bug is indistinguishable from a feature.",
-        "author": "Rich Kulawiec"
-    },
-    {
-        "text": "There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies.",
-        "author": "C.A.R. Hoare"
+        "text": "Measuring programming progress by lines of code is like measuring airplane building progress by weight.",
+        "author": "Bill Gates"
     }
 ];
 if (typeof module !== 'undefined' && module.exports) { module.exports = { quotes }; }
